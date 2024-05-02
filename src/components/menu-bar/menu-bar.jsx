@@ -10,6 +10,7 @@ import React from 'react';
 import VM from 'openblock-vm';
 
 import Box from '../box/box.jsx';
+import Swecha from "./swecha.png";
 import Button from '../button/button.jsx';
 import CommunityButton from './community-button.jsx'; // eslint-disable-line no-unused-vars
 import ShareButton from './share-button.jsx'; // eslint-disable-line no-unused-vars
@@ -86,7 +87,7 @@ import mystuffIcon from './icon--mystuff.png'; // eslint-disable-line no-unused-
 import profileIcon from './icon--profile.png'; // eslint-disable-line no-unused-vars
 import remixIcon from './icon--remix.svg';
 import dropdownCaret from './dropdown-caret.svg';
-import languageIcon from '../language-selector/language-icon.svg';
+import languageIcon from '../language-selector/language-icon.svg';mystuffIcon
 import aboutIcon from './icon--about.svg';
 import saveIcon from './icon--save.svg';
 import linkSocketIcon from './icon--link-socket.svg'; // eslint-disable-line no-unused-vars
@@ -313,10 +314,10 @@ class MenuBar extends React.Component {
         }
     }
     handleClickOpenCommunity () {
-        window.open('https://community.openblock.cc');
+        window.open('https://www.swechaap.org/');
     }
     handleClickOpenWiki () {
-        window.open('https://wiki.openblock.cc');
+        window.open('https://www.swechaap.org/');
     }
     restoreOptionMessage (deletedItem) {
         switch (deletedItem) {
@@ -529,13 +530,13 @@ class MenuBar extends React.Component {
                 <div className={styles.mainMenu}>
                     <div className={classNames(styles.menuBarItem)}>
                         <img
-                            alt="OpenBlock"
+                            alt="Swecha"
                             className={classNames(styles.scratchLogo, {
-                                [styles.clickable]: typeof this.props.onClickLogo !== 'undefined'
+
                             })}
                             draggable={false}
-                            src={this.props.logo}
-                            onClick={this.props.onClickLogo}
+                            src={Swecha}
+
                         />
                     </div>
                     {(this.props.canChangeLanguage) && (<div
